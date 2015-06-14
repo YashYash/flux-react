@@ -1,0 +1,152 @@
+/* Recipe.css */
+/* Styling for all the files in /js/componets/recipe */
+
+/* Recipe Form */
+.recipe-form {
+	width:100%;
+	max-width:300px;
+	min-width:250px;
+	position: relative;
+	margin:auto;
+}
+.recipe-form p {
+	margin-bottom:30px;
+}
+
+.recipe-form input {
+	border:none;
+	height:35px;
+	background:none;
+	border-bottom:1px solid rgba(238,238,238,1);
+	width:80%;
+	margin:auto;
+	outline:0;
+	margin-bottom:10px;
+	color:white;
+	text-align: center;
+	font-size:15px;
+	margin-top:20px;
+	padding-bottom:15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:100;
+}
+
+/* The dropdown which has the form in it */
+.form-dropdown {
+	width:80%;
+	max-width:300px;
+	min-width:250px;
+	margin:auto;
+	position: relative;
+	padding-bottom:10px;
+	transition: 0.5s ease;
+	border:1px solid #22c1ee;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.form-dropdown.hide-dropdown {
+	opacity: 0;
+	transform:scale(0,0);
+	height:0;
+}
+.form-dropdown.show-dropdown {
+	opacity: 1;
+	transform:scale(1,1);
+	height:auto;
+}
+.close-dropdown {
+	position: absolute;
+	right:-15px;
+	top:-15px;
+	background:black;
+	padding: 10px;
+	z-index: 1;
+	border-radius:100%;
+	border:1px solid #22c1ee;
+	font-size:14px;
+	cursor:pointer;
+	transition:0.5s;
+}
+.close-dropdown:hover {
+	transform: rotate(360deg);
+}
+.add-recipe-button {
+	background:none;
+	width:180px;
+	height:35px;
+	border:1px solid #22c1ee;
+	font-size:12px;
+	color:white;
+	cursor: pointer;
+	outline:0;
+	transition:0.3s;
+}
+.add-recipe-button.in-dropdown {
+	border-radius:40px;
+	line-height:3em;
+	margin:20px auto 0 auto;
+}
+.add-recipe-button:hover {
+	background:rgba(34,193,238, 0.2);
+}
+
+/* The individual Recipes */
+.individual-recipe {
+	width:100%;
+	max-width:400px;
+	min-width:280px;
+	height:auto;
+	text-align:center;
+	padding:30px 20px 30px 20px;
+	margin:auto;
+	border:1px solid white;
+	margin-bottom:50px;
+	box-shadow: 0 0 30px rgba(238,238,238,0.6);
+
+}
+.individual-recipe h1 {
+	font-weight:100;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	margin:0;
+}
+
+.individual-recipe p {
+	color:#22c1ee;
+	font-weight:400;
+	font-size:14px;
+	line-height:2em;
+	margin-bottom:20px;
+}
+
+.individual-recipe .edit-delete {
+	padding-top:25px;
+	width:150px;
+	margin:auto;
+	border-top:1px solid rgba(238,238,238,0.2);
+}
+.individual-recipe .edit-delete span {
+	margin:10px 20px;
+	transition:0.4s;
+	opacity:0.5;
+	cursor: pointer;
+	font-size:20px;
+}
+.individual-recipe .edit-delete span:hover {
+	opacity: 1;
+	color:#22c1ee;
+}
+
+/* When no recipes are in the list */
+.no-recipe-in-list {
+	color:#22c1ee;
+	font-weight:100;
+	padding:0 20px;
+}
+.no-recipe-in-list#hide {
+	display: none;
+}
+.no-recipe-in-list#show {
+	display: block;
+}

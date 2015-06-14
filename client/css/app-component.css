@@ -1,0 +1,25 @@
+.app-component {
+	width:90%;
+	margin:auto;
+	position: relative;
+	color:white;
+}
+
+.app-component > .heading {
+	color:white;
+	margin:0;
+	font-weight:100;
+}
+
+.app-component > .sub-heading {
+	color:#22c1ee;
+	font-weight:600;
+}
+
+.app-component > .sub-line {
+	width:60px;
+	height:2px;
+	background:rgba(238,238,238,0.2);
+	margin:auto;
+	margin-bottom:50px;
+}
