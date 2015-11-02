@@ -84,4 +84,4 @@ gulp.task('watch', function() {
   gulp.watch('views/*.jade', ['templates']);
 });
 
-gulp.task('default', ['cssLint', 'templates', 'scripts', 'styles', 'watch', 'start']);
+gulp.task('one', ['cssLint', 'templates', 'scripts', 'styles', 'watch', 'start']);

@@ -16,6 +16,11 @@ var RecipeActions = Flux.createActions({
 			actionType: "DELETE_RECIPE",
 			recipeId: id
 		}
+	},
+	nukeRecipes: function() {
+		return {
+			actionType: 'NUKE_RECIPES'
+		}
 	}
 })
 

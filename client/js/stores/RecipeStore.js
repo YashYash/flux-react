@@ -16,6 +16,9 @@ function deleteRecipe(id) {
 		}
 	}
 }
+function nukeRecipes() {
+	_recipes = [];
+}
 var RecipeStore = Flux.createStore({
 	getRecipes: function() {
 		return _recipes
@@ -29,6 +32,10 @@ var RecipeStore = Flux.createStore({
 	}
 	if(payload.actionType === 'DELETE_RECIPE') {
 		deleteRecipe(payload.recipeId._id);
+		RecipeStore.emitChange();
+	}
+	if(payload.actionType === 'NUKE_RECIPES') {
+		nukeRecipes();
 		RecipeStore.emitChange();
 	}
 })
